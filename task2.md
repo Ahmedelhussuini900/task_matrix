@@ -56,3 +56,35 @@ foreach Loop Usage:Specifically designed for iterating over arrays and collectio
 Syntax:Automatically handles each element without needing to manage indices.
 
 ##############################################################################################################
+5-
+array_merge()
+
+Combines two or more arrays by appending values from one array to another.
+If arrays have numeric keys, the keys will be reindexed.
+If associative keys are present, later values overwrite earlier ones with the same key.
+
+ex:
+$array1 = [1, 2, 3];
+$array2 = [4, 5, 6];
+
+$result = array_merge($array1, $array2);
+
+print_r($result); // Output: [1, 2, 3, 4, 5, 6]
+
+
+array_combine()
+
+Combines two arrays by using one array as keys and the other as values.
+Both arrays must have the same number of elements.
+
+
+$keys = ['name', 'age', 'country'];
+$values = ['Ahmed', 25, 'Egypt'];
+
+$result = array_combine($keys, $values);
+
+print_r($result); 
+
+
+array_merge()	Combine multiple arrays into one, ignoring keys if numeric
+array_combine()	Create an associative array from two arrays: one for keys, one for values
