@@ -127,3 +127,21 @@ Retrieves data sent in the body of an HTTP POST request (usually via forms).
 </form>
 echo $_POST['username'];
 --------------------------------------------------------------------------
+8- ما هي PSR Standards في PHP؟ اذكر بعض الأمثلة.
+PSR Standards (PHP Standard Recommendations) هي مجموعة من المعايير والاقتراحات التي وضعتها PHP-FIG (PHP Framework Interop Group) بهدف توحيد كتابة الكود بين مطوري PHP، مما يسهل قراءة وصيانة الكود ويساعد على التوافق بين المكتبات والأطر المختلفة.
+
+PSR-1       Basic Coding Standard
+
+PSR-2	    Coding Style Guide	
+
+PSR-3	    Logger Interface	
+
+PSR-4	    Autoloading Standard	
+
+PSR-7	    HTTP Message Interface	
+
+PSR-12	    Extended Coding Style Guide	
+
+
+وفي بعض الحاجات سيرشت عليها 
+##############################################################################***************************###################
