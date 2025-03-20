@@ -30,3 +30,22 @@ ex:
 var_dump(5 === "5"); // false 
 var_dump(5 === 5);   // true 
 var_dump(true === 1); //false
+
+
+3-3- كيف يمكن تعريف متغير في PHP؟ وهل يمكن تغيير نوعه بعد تعريفه؟
+In PHP, you define a variable by using the $ sign
+ex:
+$variableName = value;
+
+ Can You Change Its Type After Defining It?
+ Yes! PHP is a dynamically typed language.
+
+ex:
+$variable = 10;        
+$variable = "Hello";   
+$variable = 3.14;      
+$variable = true;      
+
+--------------------------------------------------------q4--------------------------------------------
+
+
