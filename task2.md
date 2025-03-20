@@ -112,3 +112,18 @@ try {
 }
 ?>
 ################################################################################
+7- ما وظيفة $_GET و $_POST؟ وما الفرق بينهما؟
+_GET
+Retrieves data sent via URL parameters (Query String).
+http://example.com/page.php?name=Ahmed&age=25
+echo $_GET['name']; // Output: Ahmed
+echo $_GET['age'];  // Output: 25
+
+$_POST:
+Retrieves data sent in the body of an HTTP POST request (usually via forms).
+<form method="POST" action="page.php">
+    <input type="text" name="username">
+    <input type="submit">
+</form>
+echo $_POST['username'];
+--------------------------------------------------------------------------
