@@ -47,5 +47,12 @@ $variable = 3.14;
 $variable = true;      
 
 --------------------------------------------------------q4--------------------------------------------
+4- ما الفرق بين foreach و for عند التعامل مع المصفوفات؟
 
+for Loop Usage:	General-purpose loop. Used when you need index-based access (e.g., numeric arrays)
+Syntax:Requires manual handling of indices (counter, conditions, increment).
 
+foreach Loop Usage:Specifically designed for iterating over arrays and collections easily.
+Syntax:Automatically handles each element without needing to manage indices.
+
+##############################################################################################################
