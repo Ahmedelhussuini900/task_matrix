@@ -88,3 +88,27 @@ print_r($result);
 
 array_merge()	Combine multiple arrays into one, ignoring keys if numeric
 array_combine()	Create an associative array from two arrays: one for keys, one for values
+
+################################################################################################
+6- كيف يمكن الاتصال بقاعدة بيانات MySQL باستخدام PDO؟
+<?php
+
+$host = 'localhost';
+$db   = 'manager';
+$user = 'root';
+$pass = 'your_password';
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+
+try {
+    $pdo = new PDO($dsn, $user, $pass);
+    
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    echo "Connection successful!";
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+?>
+################################################################################
