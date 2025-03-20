@@ -164,3 +164,11 @@ PSR-12	    Extended Coding Style Guide
 
 
 ###############################################################
+10- ما هو Dependency Injection في PHP؟
+
+Dependency Injection هو تصميم برمجي (Design Pattern) يهدف إلى فصل مكونات الكود عن بعضها البعض عبر تمرير الكائنات (Dependencies) التي تعتمد عليها الكلاس من الخارج بدلاً من إنشائها داخل الكلاس نفسه.
+
+بمعنى آخر:
+
+بدلاً من أن الكلاس ينشئ الـ dependency بداخله.
+يتم "حقن" dependency من خارج الكلاس (عبر الـ Constructor أو Setter أو Method).
